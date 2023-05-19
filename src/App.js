@@ -6,6 +6,7 @@ import Store from "./components/Store";
 import ProductDetails from "./components/ProductDetails";
 import Navbar from "./components/shared/Navbar";
 import ShopCart from "./components/ShopCart";
+import Footer from "./components/shared/Footer";
 
 // Context
 import ProductContextProvider from "./context/ProductContextProvider";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/cart" element={<ShopCart />} />
           <Route path="/*" element={<Navigate to="/products" />} />
         </Routes>
+        <Footer />
       </CartContextProvider>
     </ProductContextProvider>
   );
